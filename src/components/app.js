@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 
 import { fetchStickers } from '../actions';
 
+import Card from './card';
+
 class App extends Component {
 
   componentDidMount() {
@@ -16,10 +18,7 @@ class App extends Component {
         {
           this.props.stickers.map(sticker => {
             return (
-              <div className='sticker' key={sticker._id}>
-                <img src={sticker.imageUrl}/>
-                <div>Category: {sticker.category}</div>
-              </div>
+              <Card {...sticker} key={sticker._id} />
             )
           })
         }
@@ -35,6 +34,6 @@ function mapStateToProps(state) {
   }
 }
 
-app = connect(mapStateToProps, {fetchStickers})(App);
+App = connect(mapStateToProps, {fetchStickers})(App);
 
 export default App;
