@@ -1,6 +1,10 @@
 import { SET_STICKERS } from '../actions/types';
 
-export default function(state = {}, action) {
+const INITIAL_STATE = {
+    stickers: []
+}
+
+export default function(state = INITIAL_STATE, action) {
     switch (action.type) {
         case SET_STICKERS:
             return {
@@ -10,5 +14,3 @@ export default function(state = {}, action) {
         default: return state;
     }
 }
-
-export default function();

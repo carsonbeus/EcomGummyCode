@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 
-import store from '/storeReducer';
+import store from './storeReducer';
 
 
 const rootReducer = combineReducers({
@@ -8,3 +8,4 @@ const rootReducer = combineReducers({
 });
 
 export default rootReducer;
+
