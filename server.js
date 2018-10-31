@@ -23,19 +23,25 @@ app.get('/api/store', function(req, res) {
       _id: 0,
       category: 'Javascript',
       remaining: 4,
-      imageURL: 'https://via.placeholder.com/80x80'
+      imageURL: 'https://source.unsplash.com/collection/2270935',
+      title: 'Javascript in the Browser',
+      description: 'java es lo mejor idioma de software en todo el mundo homes'
     },
     {
       _id: 1,
       category: 'Python',
       remaining: 2,
-      imageURL: 'https://via.placeholder.com/80x80'
+      imageURL: 'https://source.unsplash.com/collection/2270936',
+      title: 'ssssssš',
+      description: 'slitherin snakey gets shakey shakey'
     },
     {
       _id: 2,
       category: 'Ruby',
       remaining: 6,
-      imageURL: 'https://via.placeholder.com/80x80'
+      imageURL: 'https://source.unsplash.com/collection/1144691',
+      title: 'Ruby Rivers',
+      description: 'I like dollars I like diamonds. I like dollars I like diamonds. I like dollars I like diamonds.I like dollars I like diamonds .I like dollars I like diamonds .I like dollars I like diamonds. I like dollars I like diamonds.'
     }
   ]
 
